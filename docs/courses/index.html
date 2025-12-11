@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Courses · Flame Division Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background:#000; color:#eee; }
+    header { padding:1.5rem 1rem; border-bottom:1px solid #222; text-align:center; }
+    header a { color:#fabe3c; text-decoration:none; }
+    h1 { margin:0.5rem 0 0; font-size:2rem; }
+    .hero { text-align:center; padding:2rem 1rem 1rem; color:#ccc; }
+    .hero p { max-width:700px; margin:0.5rem auto 0; line-height:1.6; }
+    .tier-section { max-width:1000px; margin:2rem auto; padding:0 1rem; }
+    .tier-title { font-size:1.4rem; color:#fabe3c; margin-bottom:0.5rem; }
+    .tier-note { color:#888; margin-bottom:1rem; }
+    .grid { display:grid; gap:1.2rem; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
+    .card {
+      border:1px solid #333; border-radius:10px; padding:1.2rem;
+      background:radial-gradient(circle at top,#171717,#050505);
+    }
+    .card h3 { margin-top:0; color:#fff; }
+    .card p { color:#ccc; font-size:0.95rem; line-height:1.5; }
+    .tagline { font-size:0.85rem; color:#999; margin-top:0.4rem; }
+    .card a {
+      display:inline-block; margin-top:0.75rem;
+      padding:0.4rem 0.9rem; border-radius:999px;
+      border:1px solid #fabe3c; color:#fabe3c; text-decoration:none;
+      font-size:0.9rem; font-weight:600;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="../index.html">← Back to Academy</a>
+  <h1>Curriculum · Level 1 Operator Track</h1>
+</header>
+
+<section class="hero">
+  <p>
+    These are **Level 1** operator courses — each one ends with a concrete skill,
+    a working system, and proof you can move in the In-AI Era without guessing.
+  </p>
+</section>
+
+<!-- Tier 0 -->
+<section class="tier-section">
+  <div class="tier-title">Tier 0 — On-Ramp & Orientation</div>
+  <div class="tier-note">Warm-up for new operators. No prior AI experience required.</div>
+  <div class="grid">
+    <article class="card">
+      <h3>Flame AI · School of Hard Knocks</h3>
+      <p>
+        Street-level AI literacy. Learn how AI, automation, and systems thinking fit into
+        real life — not just tech blogs. Designed for first-timers and late adopters.
+      </p>
+      <p class="tagline">Outcome: You can explain the In-AI Era to anyone in plain language.</p>
+      <a href="t0-hard-knocks.html">View outline</a>
+    </article>
+
+    <article class="card">
+      <h3>Flame Division Orientation</h3>
+      <p>
+        A short orientation on Flame Law, Operator ethics, and what it means to build
+        with AI responsibly. Sets the tone for every course that follows.
+      </p>
+      <p class="tagline">Outcome: You know the rules of the Dojo before you step on the mat.</p>
+      <a href="t0-orientation.html">View outline</a>
+    </article>
+  </div>
+</section>
+
+<!-- Tier 1 -->
+<section class="tier-section">
+  <div class="tier-title">Tier 1 — Core Systems</div>
+  <div class="tier-note">Where we move from curiosity to execution.</div>
+  <div class="grid">
+    <article class="card">
+      <h3>Flame Walker · AI Operator Level 1</h3>
+      <p>
+        The foundational track for becoming an AI Operator: prompts, workflows,
+        multi-tool orchestration, and basic governance built into every move.
+      </p>
+      <p class="tagline">Outcome: You can design and run small AI systems end-to-end.</p>
+      <a href="t1-flame-walker.html">View outline</a>
+    </article>
+
+    <article class="card">
+      <h3>AI Discussion Coach · Conversation Dojo</h3>
+      <p>
+        Train to talk about AI work like a professional — with recruiters, execs,
+        and skeptical coworkers. No buzzwords, only clear explanations.
+      </p>
+      <p class="tagline">Outcome: You can defend your AI work in any room.</p>
+      <a href="t1-discussion-dojo.html">View outline</a>
+    </article>
+
+    <article class="card">
+      <h3>Interview Training Coach · Readiness Under Pressure</h3>
+      <p>
+        High-pressure interview simulations with structured feedback. Learn to
+        keep your composure, own your story, and answer like a systems thinker.
+      </p>
+      <p class="tagline">Outcome: You’re ready for real AI-era interviews.</p>
+      <a href="../dojo/interview-coach/">Launch Dojo</a>
+    </article>
+  </div>
+</section>
+
+<!-- Tier 2 -->
+<section class="tier-section">
+  <div class="tier-title">Tier 2 — Implementation & Governance</div>
+  <div class="tier-note">For operators ready to deploy in live environments.</div>
+  <div class="grid">
+    <article class="card">
+      <h3>CAIIP Implementation Coach · Vector Lab Console</h3>
+      <p>
+        Practice designing real implementation plans: from discovery and scoping
+        to rollout, monitoring, and rollback. Uses realistic business prompts.
+      </p>
+      <p class="tagline">Outcome: You can describe <em>how</em> to ship AI, not just what it does.</p>
+      <a href="../dojo/caiip-lab/">Launch Dojo</a>
+    </article>
+
+    <article class="card">
+      <h3>AI Ethics Coach · Responsibility Assessment</h3>
+      <p>
+        Scenario-driven ethics and risk training. You analyze trade-offs,
+        fairness, safety, and long-term impact — then defend your decisions.
+      </p>
+      <p class="tagline">Outcome: You can speak ethics and governance with leadership.</p>
+      <a href="../dojo/ethics-coach/">Launch Dojo</a>
+    </article>
+
+    <article class="card">
+      <h3>Kubernetes Workflow Operator · Level 1</h3>
+      <p>
+        Teach-back exercise where you explain a Kubernetes cluster to a non-technical
+        executive and an ops lead at the same time — no YAML, just systems thinking.
+      </p>
+      <p class="tagline">Outcome: You can explain traffic, workloads, and failure clearly.</p>
+      <a href="../dojo/kubernetes-operator/">Launch Dojo</a>
+    </article>
+  </div>
+</section>
+
+<!-- Tier 3 -->
+<section class="tier-section">
+  <div class="tier-title">Tier 3 — Specialist Tracks</div>
+  <div class="tier-note">Domain-specific labs for real-world roles.</div>
+  <div class="grid">
+    <article class="card">
+      <h3>Med-AI Tutor · Clinical Reasoning Coach</h3>
+      <p>
+        AI-assisted reasoning exercises for healthcare environments: triage,
+        escalation, and risk communication using plain language.
+      </p>
+      <p class="tagline">Outcome: You can design AI support that respects clinicians.</p>
+      <a href="../dojo/med-ai-tutor/">Launch Dojo</a>
+    </article>
+
+    <article class="card">
+      <h3>SpeechCraft AI · Speech Training Partner</h3>
+      <p>
+        Build, practice, and refine talks using live feedback and TTS playback.
+        Focused on clarity, presence, and message control.
+      </p>
+      <p class="tagline">Outcome: You can step into a room and speak with command.</p>
+      <a href="../dojo/speechcraft/">Launch Dojo</a>
+    </article>
+  </div>
+</section>
+
+</body>
+</html>
