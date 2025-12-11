@@ -392,3 +392,23 @@ textarea:focus {
 .tier-card.tier-disabled .btn[disabled] {
   cursor: not-allowed;
 }
+
+.fd-footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: #ccc;
+  background: #000;
+  border-top: 1px solid #333;
+  font-size: 0.95rem;
+}
+
+.fd-footer a.footer-link {
+  color: #f7c14d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.fd-footer a.footer-link:hover {
+  text-decoration: underline;
+  color: #ffdd77;
+}
