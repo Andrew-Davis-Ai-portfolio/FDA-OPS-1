@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Student Gate · Flame Division Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin:0; font-family:system-ui,sans-serif;
+      background:radial-gradient(circle at top,#1a1a1a,#000); color:#eee;
+      display:flex; align-items:center; justify-content:center; min-height:100vh;
+    }
+    .card {
+      width:100%; max-width:420px; padding:2rem 1.8rem;
+      border-radius:14px; border:1px solid #333; background:#050505;
+      box-shadow:0 24px 80px rgba(0,0,0,0.7); text-align:center;
+    }
+    h1 { margin-top:0; font-size:1.7rem; }
+    p { color:#ccc; font-size:0.95rem; line-height:1.5; }
+    input {
+      width:100%; padding:0.7rem 0.9rem; border-radius:999px;
+      border:1px solid #333; background:#111; color:#eee;
+      margin-top:1rem;
+    }
+    button {
+      width:100%; margin-top:0.9rem; padding:0.7rem 0.9rem;
+      border-radius:999px; border:1px solid #fabe3c;
+      background:#fabe3c; color:#000; font-weight:700; cursor:pointer;
+    }
+    .msg { margin-top:0.8rem; font-size:0.9rem; }
+    .msg.error { color:#ff6b6b; }
+    .msg.success { color:#6bffb0; }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h1>Flame Division · Student Gate</h1>
+  <p>
+    Enter the **access code** you received after enrollment.  
+    Codes are unique per student. Do not share your code publicly.
+  </p>
+
+  <input id="codeInput" type="password" placeholder="Enter access code" />
+  <button id="enterBtn">Unlock</button>
+  <div id="msg" class="msg"></div>
+</div>
+
+<script>
+  // 🔐 Change this per student or per cohort
+  const VALID_CODE = "FLAME-LEVEL1-1234";
+
+  // 🔀 Where to send them after unlock (GitHub Pages URL or internal path)
+  const DESTINATION_URL = "courses/";
+
+  const input = document.getElementById("codeInput");
+  const btn = document.getElementById("enterBtn");
+  const msg = document.getElementById("msg");
+
+  btn.addEventListener("click", () => {
+    const value = (input.value || "").trim();
+    if (!value) {
+      msg.textContent = "Enter your access code.";
+      msg.className = "msg error";
+      return;
+    }
+
+    if (value === VALID_CODE) {
+      msg.textContent = "Access granted. Redirecting…";
+      msg.className = "msg success";
+      setTimeout(() => {
+        window.location.href = DESTINATION_URL;
+      }, 600);
+    } else {
+      msg.textContent = "Invalid code. Check your email or contact the academy.";
+      msg.className = "msg error";
+    }
+  });
+
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") btn.click();
+  });
+</script>
+
+</body>
+</html>
