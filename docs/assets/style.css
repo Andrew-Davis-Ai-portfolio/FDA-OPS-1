@@ -384,3 +384,11 @@ textarea:focus {
     padding-top: 1.8rem;
   }
 }
+
+.tier-card.tier-disabled {
+  opacity: 0.6;
+  filter: grayscale(0.2);
+}
+.tier-card.tier-disabled .btn[disabled] {
+  cursor: not-allowed;
+}
