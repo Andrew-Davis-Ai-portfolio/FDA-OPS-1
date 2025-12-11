@@ -28,6 +28,19 @@
 </head>
 <body>
 
+  <script>
+  (function () {
+    try {
+      const session = localStorage.getItem("fda_tier1_session");
+      if (session !== "unlocked") {
+        window.location.href = "dojo-gate.html";
+      }
+    } catch (e) {
+      window.location.href = "dojo-gate.html";
+    }
+  })();
+</script>
+
 <header>
   <a href="../index.html">← Back to Academy</a>
   <h1>Dojo Systems</h1>
